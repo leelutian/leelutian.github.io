@@ -53,6 +53,12 @@
         
         
         
+        <a href="/search">
+          <li class="menu-li  animate__animated  animate__fadeInUp">
+            <i class="ri-search-line"></i>
+          </li>
+        </a>
+        
           <li class="menu-li animate__animated  animate__fadeInUp" id="mobile-menu">
             <i class="ri-menu-line"></i>
           </li>
@@ -91,6 +97,12 @@
     </a>
   
   
+    <a href="/search">  
+      <div class="mobile-menu-child  animate__animated  animate__fadeInUp">
+        <i class="ri-search-line"></i>
+      </div>
+    </a>
+    
   </div>
 
 
@@ -140,6 +152,32 @@
    </div>
     <!-- 评论 -->
     
+    <div class="bottom-comments-outer">
+      <div class="bottom-comments-inner">
+        <!-- valine -->
+        
+        <!-- Gitalk -->
+        
+          <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container" style="margin-top: 100px;"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'c37c956037a010d1ecf4#`Github Application clientID`',
+        clientSecret: 'ded76fb10b96f59724c2a71e41ab03e54756e132#`Github Application clientSecret`',
+        id: window.location.pathname,
+        repo: 'comment#储存评论issue的github仓库名',
+        owner: 'leelutian#Github 用户名,',
+        admin: 'leelutian#Github 用户名'
+    })
+    gitalk.render('gitalk-container')
+</script>
+        
+        <!-- livere -->
+        
+        </div>
+      </div>
+    
   </div>
 </article>
   </div>
@@ -167,6 +205,12 @@
         <li class="footer-li">
             <a href="mailto:1563250958@qq.com" target="_blank">
                 <i class="ri-mail-line"></i>
+            </a>
+        </li>
+        
+        <li class="footer-li">
+            <a href="tencent://message/?Site=baidu.com&amp;uin=980632&amp;Menu=yes" target="_blank">
+                <i class="ri-qq-line"></i>
             </a>
         </li>
         
